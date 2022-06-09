@@ -1,10 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@font-face {
+  font-family: 'ABC Whyte';
+  src:  url('../font/ABCWhyte-Book.woff2') format('woff2'),
+        url('../font/ABCWhyte-Book.woff') format('woff'); 
+  }
+  @font-face {
+    font-family: 'ABC Whyte';
+    src:  url('../font/ABCWhyte-Medium.woff2') format('woff2'),
+          url('../font/ABCWhyte-Medium.woff') format('woff'); 
+    }
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Poppins';
+  font-family: 'ABC Whyte';
+  color: #232d43;
+  background: #fff;
 }
 
 a {
@@ -16,43 +26,59 @@ a {
   box-sizing: border-box;
 }
 h2 {
-  font-size: 32px;
+  font-size: 2.5rem;
   margin-bottom: 0;
+  font-weight: 500;
 }
 p {
   margin: 0 ;
+  color: #424244;
+  font-size: 1rem;
 }
- h4 {
-  font-size: 22px;
+h4 {
+  font-size: 1.5rem;
   font-weight: 500;
-  margin: 0 0 12px;
+  margin: 0 0 16px;
 }
 h6 span {
   font-weight: 400;
+  color: #585f6f;
 }
 .labels h6 b {
   font-weight: 500;
-  width: 146px;
+  width: 160px;
   display: inline-block;
 }
+.labels {
+  padding-left: 10px;
+}
+.labels h6 small {
+  font-size: 10px;
+  position: absolute;
+  left: 2px;
+  top: 5px;
+}
 .labels h6 {
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 500;
-  margin: 0 0 6px 0;
+  margin: 0 0 10px 0;
+  position: relative;
+  padding-left: 16px;
 }
 .bar-ranges {
   width: 55%;
   position: relative;
   padding: 0px 40px;
   margin-bottom: 55px;
-  margin-top: 25px;
+  margin-top: 32px;
 }
 .bar-ranges input[type="range"] {
   -webkit-appearance: none;
-  border: 2px solid #c8c2db;
+  border: 1px solid #e6e5eb;
   border-radius: 10px;
-  height: 16px;
+  height: 13px;
   width: 100%;
+  background: rgb(230 229 235 / 13%);
 }
 .bar-ranges input[type=range]::-webkit-slider-thumb {
   width: 24px;
@@ -65,11 +91,16 @@ h6 span {
 button {
   background: #4b29c7;
   color: #fff;
-  padding: 12px 71px;
-  font-size: 14px;
+  padding: 0.5rem 1rem;
   font-weight: 500;
   border-radius: 4px;
   border: none;
+  min-width: 238px;
+  font-size: 1rem;
+  font-family: 'ABC Whyte';
+}
+button:hover {
+  background: #745ad3;
 }
 .threads {
   position: absolute;
@@ -84,44 +115,62 @@ button {
 .pack-select {
   display: flex;
   text-align: center;
+  margin-left: -12px;
+  padding-left: 10px;
 }
 .pack-select label {
   width: 100%;
   display: inline-block;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 500;
   margin-bottom: 12px;
 }
 .pack-select label span {
   font-weight: 300;
+  font-size: 0.8rem;
+  color: #585f6f;
+}
+.total-pay {
+  margin-top: 20px;
+}
+.action-pay {
+  margin-top: 20px;
 }
 .action-pay p {
-  font-size: 12px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 8px;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #585f6f;
 }
 .pack-select input[type="radio"] {
   width: 20px;
   height: 20px;
 }
 .total-pay h4 {
-  font-size: 32px;
+  font-size: 2.2rem;
 }
 .total-pay h4 small {
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 300;
+  color: #585f6f;
 }
 span.ms-4 {
-  margin-left: 128px;
+  margin-left: 114px;
 }
 @media screen and (max-width: 992px)  {
 .labels {
   width: 100%;
   margin-bottom: 25px;
+  padding-left: 0;
+}
+.pack-select {
+  padding-left: 0;
 }
 .bar-ranges {
   width: 100%;
-  padding: 0px 20px;
+  padding: 0px 0px;
+  margin-bottom: 30px;
 }
 .total-pay {
   width: 100%;
@@ -129,11 +178,43 @@ span.ms-4 {
 }
 }
 @media screen and (max-width: 768px)  {
-.threads {
-  font-size: 10px;
-}
-span.ms-4 {
-  margin-left: 49px;
-}
+  .threads {
+    font-size: 11px;
+  }
+  span.ms-4 {
+    margin-left: 49px;
+  }
+  h2 {
+    font-size: 2rem;
+    line-height: 38px;
+    margin-bottom: 8px;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .action-pay {
+    width: 100%;
+  }
+  button {
+    width: 100%;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  .labels h6 {
+    font-size: 0.8rem;
+  }
+  .pack-select label {
+    font-size: 0.8rem;
+  }
+  .total-pay h4 small {
+    font-size: 0.8rem;
+  }
+  button {
+    font-size: 0.8rem;
+  }
+  .action-pay p {
+    font-size: 0.7rem;
+  }
 }
 

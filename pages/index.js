@@ -18,7 +18,6 @@ export default function Home() {
                <p>And get 3x what other proxy providers give you.</p>
              </div>
              <div className={styles.pay_filter}>
-                <h4>Unmetered Residential Pro 1000</h4>
                 <BarRange />
              </div>
            </div>
