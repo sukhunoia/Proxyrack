@@ -41,8 +41,9 @@ h4 {
   margin: 0 0 16px;
 }
 h6 span {
-  font-weight: 400;
-  color: #585f6f;
+   font-weight: 400;
+    color: #585f6f;
+    font-size: 0.8rem;
 }
 .labels h6 b {
   font-weight: 500;
