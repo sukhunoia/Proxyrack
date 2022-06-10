@@ -159,6 +159,29 @@ button:hover {
 span.ms-4 {
   margin-left: 114px;
 }
+.d-none{
+  display:none;
+}
+span.d-none.active200 {
+  display: block;
+  position: absolute;
+  left: 18%;
+}
+span.d-none.active500 {
+  display: block;
+  position: absolute;
+  left: 34%;
+}
+span.d-none.active1000 {
+  display: block;
+  position: absolute;
+  left: 50%;
+}
+span.d-none.active2000 {
+  display: block;
+  position: absolute;
+  left: 64%;
+}
 @media screen and (max-width: 992px)  {
 .labels {
   width: 100%;
@@ -216,6 +239,26 @@ span.ms-4 {
   }
   .action-pay p {
     font-size: 0.7rem;
+  }
+  span.d-none.active200 {
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  span.d-none.active500 {
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  span.d-none.active1000 {
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  span.d-none.active2000 {
+    left: 0;
+    right: 0;
+    text-align: center;
   }
 }
 
